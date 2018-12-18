@@ -9,11 +9,20 @@ export class AppComponent {
   title = 'YOLO';
   isAuth = false;
 
-  appareilOne = 'Machine à laver';
-  appareilTwo = 'Frigo';
-  appareilThree = 'Ordinateur';
-  appareilStatusOn = 'Allumé';
-  appareilStatusOff = "Eteint";
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'Allumé'
+    },
+    {
+      name: 'Frigo',
+      status: 'Allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'Eteint'
+    }
+  ];
 
   constructor() {
     setTimeout(
