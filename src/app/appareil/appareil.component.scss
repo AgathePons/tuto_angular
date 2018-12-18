@@ -1,0 +1,18 @@
+
+.my-list {
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,.8);
+}
+
+div[class^="status"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.status.off {
+    background-color: rgb(190, 0, 0);
+}
+.status.on {
+    background-color: greenyellow;
+}

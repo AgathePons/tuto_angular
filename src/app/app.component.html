@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="text-center">
+  <h1 class="my-title">
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<app-mon-premier></app-mon-premier>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Mes appareils</h2>
+      <ul class="list-group">
+          <app-appareil [appareilName]="appareilOne" [appareilStatus]="appareilStatusOn"></app-appareil>
+          <app-appareil [appareilName]="appareilTwo" [appareilStatus]="appareilStatusOff"></app-appareil>
+          <app-appareil [appareilName]="appareilThree" [appareilStatus]="appareilStatusOn"></app-appareil>
+      </ul>
+      <button class="btn btn-success"
+              [disabled]="!isAuth"
+              (click)="onAllumer()">Tout allumer</button>
+    </div>
+  </div>
+</div>
+

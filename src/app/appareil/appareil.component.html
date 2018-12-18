@@ -1,0 +1,21 @@
+
+  <li class="list-group-item my-list">
+    <div class="status on" *ngIf="appareilStatus === 'Allumé'"> 
+    </div>
+    <div class="status off" *ngIf="appareilStatus === 'Eteint'"> 
+    </div>
+    <div class="status" *ngIf="appareilStatus != 'Allumé' && appareilStatus != 'Eteint'"> 
+    </div>
+    <h4>Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
+    <div class="form-horizontal">
+      <label class="control-label">Appareil :</label>
+      <input type="text" class="form-control" [(ngModel)]="appareilName">
+      <label class="control-label">Status :</label>
+      <!-- <input type="text" class="form-control" [(ngModel)]="appareilStatus"> -->
+      <select class="form-control" [(ngModel)]="appareilStatus">
+        <option>Allumé</option>
+        <option>Eteint</option>
+      </select>
+    </div>
+  </li>
+
