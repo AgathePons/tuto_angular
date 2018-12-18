@@ -2,12 +2,14 @@
 .my-list {
     margin-bottom: 5px;
     background-color: rgba(255,255,255,.8);
+    box-shadow: 3px 3px 10px rgba(72,69,158,.7);
 }
 
 div[class^="status"] {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    box-shadow: 2px 2px 0px #A6BDBD;
 }
 
 .status.off {

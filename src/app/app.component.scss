@@ -1,10 +1,14 @@
-$color-title: rgb(232, 120, 92);
-$color-title-shadow: darken(rgb(232, 120, 92),22);
+
 
 .my-title {
-    font-family: 'Acme', Helvetica, sans-serif;
+    font-family: 'Permanent Marker', Helvetica, sans-serif;
     font-size: 5rem;
-    color: $color-title;
+    color: rgb(232, 120, 92);
     margin: 15px 10px 5px 10px;
-    text-shadow: 3px 3px 0px $color-title-shadow;
+    text-shadow: 3px 3px 0px darken(rgb(232, 120, 92),22);
+  }
+
+  .my-sub-title {
+    font-family: 'Permanent Marker', Helvetica, sans-serif;
+    font-size: 3rem;
   }
